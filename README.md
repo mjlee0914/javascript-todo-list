@@ -4,7 +4,17 @@
 
 KANT AX Engineer 과정 CH2 프론트엔드 개발 평가 과제로 제작했습니다.
 
-![A Bill for a Day 할 일 목록 미리 보기](main.png)
+## 구현 화면
+
+### 할 일 목록
+
+![A Bill for a Day 할 일 목록 실행 화면](screenshots/todo-list.png)
+
+### 빈 목록
+
+![A Bill for a Day 빈 목록 화면](main.png)
+
+> 화면 캡처와 별도로 과제 제출 전 추가·조회·수정·삭제가 모두 포함된 시연 영상을 첨부할 예정입니다.
 
 ## 목차
 
@@ -73,6 +83,8 @@ python3 -m http.server 8000
 │   └── tailwind.css
 ├── js/
 │   └── todo.js
+├── screenshots/
+│   └── todo-list.png
 ├── index.html
 └── main.png         # README 미리 보기 이미지
 ```
@@ -81,6 +93,7 @@ python3 -m http.server 8000
 
 - [x] 개인 Public 저장소로 분리
 - [x] CRUD 기능 및 미리 보기 이미지 포함
+- [x] 할 일이 표시된 실행 화면 캡처 포함
 - [ ] 추가·조회·수정·삭제 시연 영상 첨부
 - [ ] GitHub Pages 배포 주소 추가
 
