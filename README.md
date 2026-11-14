@@ -1,6 +1,6 @@
 # A Bill for a Day
 
-영수증 디자인으로 하루의 할 일을 정리하는 목록입니다. 할 일은 브라우저에 저장됩니다.
+오늘 해야 할 일을 영수증의 항목처럼 기록하고, 완료한 일들을 하나씩 정산하는 Todo List입니다. 하루 동안 추가한 할 일은 브라우저에 저장되어 페이지를 다시 열어도 이어서 확인할 수 있습니다.
 
 KANT AX Engineer 과정 CH2 프론트엔드 개발 평가 과제로 제작했습니다.
 
@@ -30,20 +30,26 @@ KANT AX Engineer 과정 CH2 프론트엔드 개발 평가 과제로 제작했습
 ## 목차
 
 - [A Bill for a Day](#a-bill-for-a-day)
-  - [목차](#목차)
+  - [구현 화면](#구현-화면)
+    - [할 일 목록](#할-일-목록)
+    - [빈 목록](#빈-목록)
   - [CRUD 기능 시연](#crud-기능-시연)
+  - [목차](#목차)
   - [프로젝트 소개](#프로젝트-소개)
   - [주요 기능](#주요-기능)
   - [버튼 설명](#버튼-설명)
   - [사용 기술](#사용-기술)
   - [로컬에서 실행하기](#로컬에서-실행하기)
   - [폴더 구조](#폴더-구조)
+  - [과제 제출 전 확인](#과제-제출-전-확인)
+    - [선택 사항](#선택-사항)
+  - [원본 작업 위치](#원본-작업-위치)
 
 ## 프로젝트 소개
 
-시간은 돈처럼 소중하게 써야 한다는 생각에서 시작했습니다. 영수증에 하루의 지출을 적듯, 오늘의 할 일을 정리하고 완료한 일을 확인할 수 있도록 만들었습니다.
+`A Bill for a Day`는 하루가 끝나기 전 오늘의 시간을 어떻게 사용했는지 돌아볼 수 있도록 만든 영수증 컨셉의 Todo List입니다. 해야 할 일을 영수증의 주문 항목처럼 적고, 체크한 일은 완료 내역으로 정산합니다.
 
-돼지저금통 모양의 파비콘에는 시간을 돈처럼 아껴 차곡차곡 모으자는 뜻을 담았습니다. 작은 할 일을 하나씩 끝내며 오늘을 알차게 보내자는 의미입니다.
+날짜, 항목 번호, 구분선, 바코드와 `valid until today` 문구를 활용해 한 장의 실제 영수증처럼 구성했습니다. 돼지저금통 모양의 파비콘에는 작은 할 일을 하나씩 끝내며 소중한 시간을 차곡차곡 모은다는 의미를 담았습니다.
 
 ![VALUE YOUR TIME MORE THAN YOUR MONEY 영수증 콘셉트 이미지](assets/value-your-time-receipt-pig.png)
 
@@ -90,18 +96,28 @@ python3 -m http.server 8000
 
 ```text
 ./
-├── assets/          # 영수증 배경, 바코드, 파비콘, 글꼴, 콘셉트 이미지
+├── assets/
+│   ├── fonts/
+│   │   └── Fake Receipt.otf  # 영수증 스타일 글꼴
+│   ├── barcode.png            # 영수증 하단 바코드
+│   ├── favicon.ico            # 돼지저금통 파비콘
+│   ├── image.png              # 영수증 종이 배경
+│   └── value-your-time-receipt-pig.png  # 프로젝트 컨셉 이미지
 ├── css/
-│   ├── style.css
-│   ├── tailwind-input.css
-│   └── tailwind.css
+│   ├── style.css              # 사용자 정의 스타일
+│   ├── tailwind-input.css     # Tailwind CSS 입력 파일
+│   └── tailwind.css           # 빌드된 Tailwind CSS
 ├── js/
-│   └── todo.js
+│   └── todo.js                # Todo CRUD 및 저장 로직
 ├── screenshots/
-│   ├── todo-crud-demo.gif   # 추가·조회·수정·삭제 시연 영상
-│   └── todo-list.png
-├── index.html
-└── main.png         # README 미리 보기 이미지
+│   ├── todo-crud-demo.gif     # 추가·조회·수정·삭제 시연 영상
+│   └── todo-list.png          # 할 일이 표시된 실행 화면
+├── index.html                 # 애플리케이션 메인 화면
+├── main.png                   # 빈 목록 실행 화면
+├── package.json               # 프로젝트 및 개발 의존성 정보
+├── package-lock.json          # npm 의존성 잠금 파일
+├── tailwind.config.js         # Tailwind CSS 설정
+└── README.md
 ```
 
 ## 과제 제출 전 확인
