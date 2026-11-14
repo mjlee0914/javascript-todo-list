@@ -45,6 +45,8 @@ KANT AX Engineer 과정 CH2 프론트엔드 개발 평가 과제로 제작했습
 
 돼지저금통 모양의 파비콘에는 시간을 돈처럼 아껴 차곡차곡 모으자는 뜻을 담았습니다. 작은 할 일을 하나씩 끝내며 오늘을 알차게 보내자는 의미입니다.
 
+![VALUE YOUR TIME MORE THAN YOUR MONEY 영수증 콘셉트 이미지](assets/value-your-time-receipt-pig.png)
+
 ## 주요 기능
 
 - 할 일을 추가하고, 수정하고, 삭제할 수 있습니다.
@@ -88,7 +90,7 @@ python3 -m http.server 8000
 
 ```text
 ./
-├── assets/          # 영수증 배경, 바코드 이미지, 파비콘, 글꼴
+├── assets/          # 영수증 배경, 바코드, 파비콘, 글꼴, 콘셉트 이미지
 ├── css/
 │   ├── style.css
 │   ├── tailwind-input.css
