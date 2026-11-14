@@ -4,6 +4,8 @@
 
 KANT AX Engineer 과정 CH2 프론트엔드 개발 평가 과제로 제작했습니다.
 
+**배포 주소:** <https://mjlee0914.github.io/javascript-todo-list/>
+
 ## 구현 화면
 
 ### 할 일 목록
@@ -109,9 +111,7 @@ python3 -m http.server 8000
 
 ### 선택 사항
 
-과제 필수 조건은 아니며, 이번 제출에서는 진행하지 않았습니다.
-
-- [ ] GitHub Pages 배포 주소 추가
+- [x] GitHub Pages 배포 주소 추가
 
 ## 원본 작업 위치
 
