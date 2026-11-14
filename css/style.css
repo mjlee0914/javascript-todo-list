@@ -1,0 +1,7 @@
+/* Tailwind 유틸리티(css/tailwind.css) 외에 직접 작성한 스타일 */
+
+@font-face {
+    font-family: "Fake Receipt";
+    src: url("../assets/fonts/Fake%20Receipt.otf") format("opentype");
+    font-display: swap;
+}

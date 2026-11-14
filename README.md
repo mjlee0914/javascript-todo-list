@@ -14,12 +14,22 @@ KANT AX Engineer 과정 CH2 프론트엔드 개발 평가 과제로 제작했습
 
 ![A Bill for a Day 빈 목록 화면](main.png)
 
-> 화면 캡처와 별도로 과제 제출 전 추가·조회·수정·삭제가 모두 포함된 시연 영상을 첨부할 예정입니다.
+## CRUD 기능 시연
+
+![A Bill for a Day 추가·조회·수정·삭제 시연](screenshots/todo-crud-demo.gif)
+
+브라우저에서 할 일의 추가·조회·수정·삭제를 한 흐름으로 실행한 시연 영상입니다. 상단 표시줄에 현재 단계가 나타납니다.
+
+1. **추가(Create)**: 입력창에 `Buy milk`, `Read a book`, `Walk the dog`를 입력하고 `+`를 눌러 추가합니다.
+2. **조회(Read)**: 추가한 할 일 3개가 목록에 표시되고, 새로고침한 뒤에도 `localStorage`에서 불러와 그대로 유지됩니다.
+3. **수정(Update)**: 첫 번째 항목의 `E`를 누르고 입력창(prompt)에 새 내용을 입력해 `Buy milk`를 `Buy oat milk`로 고칩니다.
+4. **삭제(Delete)**: `Read a book` 항목의 `x`를 눌러 삭제하고, 남은 할 일 2개를 확인합니다.
 
 ## 목차
 
 - [A Bill for a Day](#a-bill-for-a-day)
   - [목차](#목차)
+  - [CRUD 기능 시연](#crud-기능-시연)
   - [프로젝트 소개](#프로젝트-소개)
   - [주요 기능](#주요-기능)
   - [버튼 설명](#버튼-설명)
@@ -84,6 +94,7 @@ python3 -m http.server 8000
 ├── js/
 │   └── todo.js
 ├── screenshots/
+│   ├── todo-crud-demo.gif   # 추가·조회·수정·삭제 시연 영상
 │   └── todo-list.png
 ├── index.html
 └── main.png         # README 미리 보기 이미지
@@ -94,7 +105,12 @@ python3 -m http.server 8000
 - [x] 개인 Public 저장소로 분리
 - [x] CRUD 기능 및 미리 보기 이미지 포함
 - [x] 할 일이 표시된 실행 화면 캡처 포함
-- [ ] 추가·조회·수정·삭제 시연 영상 첨부
+- [x] 추가·조회·수정·삭제 시연 영상 첨부
+
+### 선택 사항
+
+과제 필수 조건은 아니며, 이번 제출에서는 진행하지 않았습니다.
+
 - [ ] GitHub Pages 배포 주소 추가
 
 ## 원본 작업 위치
